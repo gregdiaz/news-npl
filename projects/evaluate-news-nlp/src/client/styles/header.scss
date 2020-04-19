@@ -1,0 +1,34 @@
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    .logo{
+        color: #077000;
+        background-color: yellow;
+    }
+
+    .nav{
+        display: grid;
+        grid-column: auto;
+        grid-template-areas: 'form' 'ct';
+
+        #form{
+            grid-area:form;
+            border-radius: 10px;
+
+        }
+
+        #ct{
+            grid-area:ct;
+            border-radius: 10px;
+        }
+
+
+    
+    }
+
+}
+
+
+
