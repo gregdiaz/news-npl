@@ -1,31 +1,23 @@
 
 header{
-    display: flex;
+    display: inline-grid !important;
     justify-content: space-between;
-    padding: 10px 40px;
+    padding: 400px 40px;
+    grid-template-areas: 'logo' 'btn';
+    grid-template-rows: 20%;
+    grid-template-columns: 200px auto;
+    margin: 20px !important;
+
     .logo{
+        grid-area:logo;
         color: #077000;
         background-color: yellow;
+        height: auto;
     }
 
     .nav{
-        display: grid;
-        grid-column: auto;
-        grid-template-areas: 'form' 'ct';
-
-        #form{
-            grid-area:form;
-            border-radius: 10px;
-
-        }
-
-        #ct{
-            grid-area:ct;
-            border-radius: 10px;
-        }
-
-
-    
+        grid-area:btn;
+        border-radius: 10px;
     }
 
 }

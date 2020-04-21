@@ -6,7 +6,6 @@ import './styles/resets.scss'
 import './styles/form.scss'
 import './styles/footer.scss'
 
-
 export {
     checkForName,
     handleSubmit
