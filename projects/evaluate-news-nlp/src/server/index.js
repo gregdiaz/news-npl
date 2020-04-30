@@ -5,6 +5,7 @@ const express = require('express')
 const mockAPIResponse = require('./mockAPI.js')
 var aylien = require("aylien_textapi");
 const app = express();
+app.use(cors());
 // set aylien API credentials
 var textapi = new aylien({
     application_id: process.env.API_ID,
